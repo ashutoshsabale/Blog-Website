@@ -55,11 +55,15 @@ export default function Post() {
                         </div>
                         )}
                   </div>
-                  <div className="w-full mb-6">
+                  <div className="w-full mb-2">
                         <h1 className="text-2xl font-bold">{post.title}</h1>
                   </div>
-                  <div className="browser-css">
+                  <div className="browser-css mb-8">
                         {parse(post.content)}
+                  </div>
+                  <div className="flex flex-wrap justify-between">
+                        <p>Post By : {userData.name}</p>
+                        <p>{(post.$updatedAt)}</p>
                   </div>
             </Container>
             </div>

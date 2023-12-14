@@ -14,7 +14,7 @@ function Home(){
             return (
                 <div className="w-full py-8 mt-4 text-center">
                     <Container>
-                        <div className="flex flex-wrap">
+                        <div className="flex flex-wrap h-[43vh] justify-center items-center">
                             <div className="p-2 w-full">
                                 <h1 className="text-2xl font-bold hover:text-gray-500">
                                     Add your First Post
