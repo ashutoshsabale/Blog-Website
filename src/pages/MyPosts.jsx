@@ -28,9 +28,12 @@ function MyPosts() {
                   <Container>
                         <div className="flex flex-wrap h-[43vh] justify-center items-center">
                               <div className="p-2 w-full">
-                              <h1 className="text-2xl font-bold hover:text-gray-500">
-                                    Add your First Post
-                              </h1>
+                                    <h2 className="text-2xl mb-10 font-bold text-gray-400">
+                                    You haven't added any post yet.
+                                    </h2>
+                                    <h1 className="text-2xl font-bold ">
+                                          Add your First Post
+                                    </h1>
                               </div>
                         </div>
                   </Container>
