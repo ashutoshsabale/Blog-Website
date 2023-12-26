@@ -28,6 +28,10 @@ const navItems = [{
 			name : 'Add Post',
 			slug : '/add-post',
 			active : authStatus
+	},{
+			name : 'My Posts',
+			slug : '/my-posts',
+			active : authStatus
 	},
 ]
 
@@ -47,7 +51,7 @@ return(
 							<li key={item.name}>
 								<button
 									onClick={()=>navigate(item.slug)}
-									className="inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full font-medium"
+									className="inline-block px-6 mx-1 py-2 duration-200 hover:bg-[#1e9fab65] active:bg-[#1e9fab]-200 focus:outline-none focus:ring-1 focus:ring-[#1e9fabb9] rounded-2xl font-mediux"
 								>{item.name}</button>
 							</li>
 						) : null
