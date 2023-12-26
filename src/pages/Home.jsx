@@ -20,7 +20,7 @@ function Home(){
                       <div className="flex flex-wrap h-[43vh] justify-center items-center">
                           <div className="p-2 w-full">
                               <h1 className="text-2xl font-bold hover:text-gray-500">
-                                  LogIn to add Post
+                                  LogIn to add and Read Post
                               </h1>
                           </div>
                       </div>
