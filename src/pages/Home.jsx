@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import appwriteService from '../appwrite/config'
-import { Container, PostCard } from "../components";
+import { Container, PostFlex } from "../components";
 import { useSelector } from "react-redux";
 
 function Home(){
@@ -9,9 +9,11 @@ function Home(){
 
       useEffect(()=>{
             appwriteService.getPosts([]).then((posts)=>{
-                  if(posts) setPosts(posts.documents)
+                  if(posts) setPosts(posts.documents.reverse())
             })
       },[])
+
+      console.log(posts)
 
       if(!isLoggedIn){
             return (
@@ -44,13 +46,11 @@ function Home(){
       }
 
       return (
-            <div className='w-full py-8'>
+            <div className='w-full'>
                   <Container>
-                        <div className='flex flex-wrap'>
+                        <div className='flex flex-wrap mt-3'>
                               {posts.map((post) => (
-                                    <div key={post.$id} className='p-2 w-1/4'>
-                                          <PostCard {...post} />
-                                    </div>
+                                    <PostFlex {...post} />
                               ))}
                         </div>
                   </Container>

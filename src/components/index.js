@@ -13,6 +13,7 @@ import Login from './Login'
 import Signup from './Signup'
 import AuthLayout from './AuthLayout'
 import Select from './Select'
+import PostFlex from "./PostFlex";
 
 
 export {
@@ -30,5 +31,6 @@ export {
       Login,
       Signup,
       AuthLayout,
-      Select
+      Select,
+      PostFlex
 }
